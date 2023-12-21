@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import "./App.css"
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Share from './components/Share'
+import Recive from './components/Recive'
+import DashBoard from './components/DashBoard'
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+         <BrowserRouter>
+        <Routes>
+         <Route path='/' element={<DashBoard/>}/>
+         <Route  path='/share' element={<Share/>}/>
+         <Route  path='/recive' element={<Recive/>}/>
+
+        </Routes>
+        
+        </BrowserRouter>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

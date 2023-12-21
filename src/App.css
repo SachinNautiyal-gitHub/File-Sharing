@@ -1,38 +1,160 @@
-.App {
-  text-align: center;
+
+
+*{
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.container{
+  display: flex;
+  margin: auto;
+  margin-top: 200px;
+  height: 300px;
+  width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  border-radius: 12px;
+  -webkit-box-shadow: -1px -1px 15px 11px rgba(188,214,206,1);
+-moz-box-shadow: -1px -1px 15px 11px rgba(188,214,206,1);
+box-shadow: -1px -1px 15px 11px rgba(188,214,206,1);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container h1{
+  font-family: monospace;
+  font-size: 34px;
+  font-weight: bold;
+  color: rgb(41, 40, 40);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+.con{
+  display: flex;
+  justify-content: space-evenly;
+  width: 380px;
+  height: 50%;
+  font-family: monospace;
+  font-size: 16px;
+}
+
+.share{
   display: flex;
   flex-direction: column;
+  cursor: pointer;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.share i{
+  font-size: 50px;
+  color:white;
+  border: 1px solid white;
+  padding: 12px;
+  background-color: rgb(49, 231, 107);
+  border-radius: 40%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.recive{
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  align-items: center;
+}
+
+.recive i {
+  font-size: 50px;
+  color:white;
+  border: 1px solid white;
+  padding: 12px;
+  background-color: rgb(1, 181, 194);
+  border-radius: 42%;
+}
+
+
+/* share.js */
+
+.share-co{
+  display: flex;
+  margin: auto;
+  margin-top: 200px;
+  height: 300px;
+  width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  border-radius: 12px;
+  -webkit-box-shadow: -1px -1px 15px 11px rgba(188,214,206,1);
+-moz-box-shadow: -1px -1px 15px 11px rgba(188,214,206,1);
+ box-shadow: -1px -1px 15px 11px rgba(188,214,206,1);
+}
+
+.share-co h2{
+  font-size: 26px;
+  font-family: monospace;
+}
+
+/* .share-co span{
+  width: 100px;
+  padding: 10px;
+} */
+
+.cr-btn{
+  padding: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 6px;
+  width: 150px;
+}
+
+.cr-btn:hover{
+  background-color: rgb(12, 195, 100);
+  scale: 1.1;
+}
+
+
+
+/* reviver.js */
+
+.rec-co{
+  display: flex;
+  margin: auto;
+  margin-top: 200px;
+  height: 300px;
+  width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  border-radius: 12px;
+  -webkit-box-shadow: -1px -1px 15px 11px rgba(188,214,206,1);
+-moz-box-shadow: -1px -1px 15px 11px rgba(188,214,206,1);
+ box-shadow: -1px -1px 15px 11px rgba(188,214,206,1);
+}
+
+.rec-co h2{
+  font-size: 26px;
+  font-family: monospace;
+}
+
+.rec-co input{
+  padding: 8px;
+  font-size: 16px;
+  font-family: sans-serif;
+  outline: none;
+  border-radius: 4px;
+}
+
+.re-btn{
+  padding: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 6px;
+  width: 100px;
+}
+
+.re-btn:hover{
+  background-color: rgb(227, 116, 240);
+  scale: 1.1;
 }
